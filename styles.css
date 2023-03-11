@@ -1,0 +1,139 @@
+:root {
+    --clr-neutral-100: #fff;
+    --clr-neutral-400: #474554;
+    --clr-primary-200: #bac9e8;
+    --clr-primary-300: #3c7dff;
+    --clr-primary-400: #0044cc;
+    --clr-primary-500: #0c1832;
+    --btn-default:#0c1832;
+
+    --ff-base: "IBM Plex Serif", serif;
+    --ff-accent: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.flow-content > * + * {
+    margin-left: 0.5rem;
+}
+
+
+
+body {
+    font-size: 1.0625rem;
+    font-family: var(--ff-base);
+    line-height: 1.65;
+    background-color: var(--clr-primary-200);
+    padding: 4rem;
+}
+
+h2,.btn {
+    font-family: var(--ff-accent);
+}
+
+.cta {
+    margin: 2rem auto;
+    max-width: 40rem;
+    color: var(--fg, var(--clr-primary-500));
+    background-color: var(--bg, var(--clr-primary-400));
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+}
+
+.bg-light,
+.bg-neutral {
+    --bg: var(--clr-neutral-100)
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--fg, var(--clr-primary-400));
+    background-color: var(--bg, var(--btn-default));
+    border: 2px solid var(--border, var(--clr-primary-400));
+    padding: 0.6rem 2rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn-primary {
+    --fg:var(--clr-neutral-100);
+    --bg:var(--clr-primary-400);
+}
+
+
+.btn-secondary {
+    --fg:var(--clr-neutral-100);
+    --bg:var(--clr-neutral-400);
+    --border:var(--clr-neutral-400);
+}
+
+.btn-outline {
+    --fg:var(--clr-primary-400);
+    --bg:transparent;
+}
+
+.bg-accent {
+    --bg:var(--clr-primary-400);
+    --fg:var(--clr-neutral-100);
+}
+
+.bg-accent .btn-primary {
+    --fg:var(--clr-primary-400);
+    --bg:var(--clr-neutral-100);
+    --border:var(--clr-neutral-100)
+}
+
+.bg-accent .btn-secondary {
+    --bg:var(--clr-primary-500);
+    --border:var(--clr-primary-500)
+}
+
+.bg-accent .btn-outline {
+    --fg:var(--clr-neutral-100);
+    --bg:transparent;
+    --border:var(--clr-neutral-100);
+}
+
+
+.bg-dark {
+    --fg:var(--clr-neutral-100);
+    --bg:var(--clr-primary-500);
+}
+
+.bg-dark .btn-primary {
+    --bg:var(--clr-primary-300);
+    --border:var(--clr-primary-300)
+}
+
+
+.bg-dark .btn-secondary {
+   --fg:var(--clr-primary-300);
+   --bg:var(--clr-neutral-100);
+   --border:var(--clr-neutral-100);
+}
+
+.bg-dark .btn-outline {
+    --fg:var(--clr-neutral-100);
+    --bg:transparent;
+    --border:var(--clr-neutral-100);
+}
+
+
+@media (max-width:394px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    .cta {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+
+}
